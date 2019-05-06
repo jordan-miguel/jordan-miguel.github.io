@@ -1,0 +1,165 @@
+
+/**Blur**/
+span.blur_out:hover, span.blur_out:focus {
+	text-decoration: none;
+	color: rgba(0,0,0,0);
+	outline: 0 none;
+	-webkit-transition: 400ms ease 100ms;
+	-moz-transition: 400ms ease 100ms;
+	transition: 400ms ease 100ms;
+}
+
+
+/* full blur */
+.textshadow span.blur_out,
+.textshadow span.blur_out.out:hover, .textshadow span.blur_out.out:focus
+{
+	text-shadow: 0px 0px 1px rgba(73, 75, 42, 0.86);
+ 
+}
+
+
+/**Fade In**/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+
+/**
+ * Resets
+ */
+
+/**
+ * Global
+ */
+ * {
+    box-sizing:border-box;
+    font-family: 'Neue Haas Unica Pro', Arial, sans-serif;
+}
+
+body {
+	 background: rgb(9,19,19);
+	 background: -moz-linear-gradient(76deg, rgba(9,19,19,1) 0%, rgba(43,43,43,1) 100%);
+	 background: -webkit-linear-gradient(76deg, rgba(9,19,19,1) 0%, rgba(43,43,43,1) 100%);
+	 background: linear-gradient(76deg, rgba(9,19,19,1) 0%, rgba(43,43,43,1) 100%);
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#091313",endColorstr="#2b2b2b",GradientType=1);
+    min-height:100vh;
+    margin:0px;
+    padding:0px;
+}
+
+.underline {
+	border-bottom: 1.2px solid rgba(189, 189, 189, 0.9);
+	display: inline-block;
+   line-height: 1.2;
+}
+
+* > a {
+    text-decoration:none;
+    color:rgba(189, 189, 189, 0.9);
+}
+
+h2 {
+    font-size:.7em;
+    font-style:normal;
+    font-weight:400;
+    line-height:1;
+    color:rgba(189, 189, 189, 0.9);
+}
+
+/**
+ * Container
+ */
+ .container {
+    padding:2rem;
+}
+
+
+/**
+ * Content
+ */
+/* INFORMATION */
+.information {
+	max-height:400px;
+}
+
+.content_inner {
+    width:40%;
+    color: rgba(255, 255, 255, 0.9);
+    font-style:bold;
+    font-weight:321;
+    font-size:1.45em;
+    line-height:1.3;
+    letter-spacing:0.018rem;
+}
+
+.portfolio > a {
+    color: inherit;
+   }
+
+small {
+    display:inline-block;
+    font-size:0.6rem;
+    text-transform: uppercase;
+    color: rgba(189, 189, 189, 0.9);
+}
+
+
+/*
+  Breakpoints
+*/
+ 
+ 
+/* Start at 740px to keep project information inline across all devices */
+@media screen and (max-width: 780px) {
+	.content_inner {
+		width:70%;
+		font-size:1.45em;
+		line-height:1.3;
+		letter-spacing:0.018rem;
+		}
+}
+
+@media screen and (max-width: 700px) {
+	.content_inner {
+		width:80%;
+		font-size:1.25em;
+		line-height:1.3;
+		letter-spacing:0.018rem;
+		}
+}
+
+@media screen and (max-width: 480px) {
+	.content_inner {
+		width:100%;
+		font-size:1.3em;
+		line-height:1.3;
+		letter-spacing:0.018rem;
+		}
+}
+
+
+
+
