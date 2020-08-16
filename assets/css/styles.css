@@ -37,6 +37,10 @@ p, span, a, li {
   vertical-align: baseline;
 }
 
+blockquote p {
+  margin-bottom: 1rem;
+}
+
 a {
   color: #4169e1;
 }
