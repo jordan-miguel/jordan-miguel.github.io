@@ -1,6 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .global-wrapper {
   margin: 0 auto;
   padding: 0.5rem 1rem;
   max-width: 720px;
 }
 
+ul {
+  margin-bottom: 1rem;
+}
+
+.global-wrapper footer {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  display: flex;
+}
