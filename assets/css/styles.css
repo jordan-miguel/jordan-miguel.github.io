@@ -1,0 +1,6 @@
+.global-wrapper {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  max-width: 720px;
+}
+
