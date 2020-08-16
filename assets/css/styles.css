@@ -84,6 +84,7 @@ ul {
 
 .global-wrapper footer {
   margin: 1rem 0;
+  margin-top: 5rem;
   font-size: 0.8rem;
   display: flex;
 }
