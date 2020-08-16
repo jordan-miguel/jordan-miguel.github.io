@@ -4,14 +4,42 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p, pre, a, li, blockquote {
+  font-family: 'Iropke Batang', 'Noto', serif;
+  color: #333333;
+}
+
 .global-wrapper {
   margin: 0 auto;
   padding: 0.5rem 1rem;
   max-width: 720px;
 }
 
+.global-wrapper .site-header {
+  margin-bottom: 2rem;
+}
+
 ul {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.global-wrapper .posts-content .posts-list li {
+  margin-left: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.global-wrapper .posts-content .posts-list li .post-date {
+  color: dimgray;
+  font-family: Monaco, "Courier New", monospace;
+  word-spacing: -0.2em;
+}
+
+.global-wrapper .posts-content .posts-list li a {
+  font-size: 1rem;
 }
 
 .global-wrapper footer {
