@@ -12,6 +12,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -74,4 +76,12 @@ ul {
   margin: 1rem 0;
   font-size: 0.8rem;
   display: flex;
+}
+
+blockquote {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background-color: ghostwhite;
+  border-left: 8px solid;
 }
