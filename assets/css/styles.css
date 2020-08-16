@@ -78,6 +78,10 @@ ul {
   display: flex;
 }
 
+.fab {
+  color: black;
+}
+
 blockquote {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
