@@ -31,6 +31,12 @@ h1 {
   letter-spacing: -0.01rem;
 }
 
+p, span, a, li {
+  line-height: 1.8;
+  word-break: keep-all;
+  vertical-align: baseline;
+}
+
 a {
   color: #4169e1;
 }
@@ -89,4 +95,11 @@ blockquote {
   padding: 1rem;
   background-color: ghostwhite;
   border-left: 8px solid;
+}
+
+.meta {
+  margin-bottom: 1.75rem;
+  font-size: 0.9rem;
+  font-style: oblique;
+  color: dimgray;
 }
