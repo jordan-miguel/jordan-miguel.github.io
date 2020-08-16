@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5, h6, p, pre, a, li, blockquote {
   color: #333333;
 }
 
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.01rem;
+}
+
 a {
   color: #4169e1;
 }
