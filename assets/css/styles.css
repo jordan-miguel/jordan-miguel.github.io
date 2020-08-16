@@ -19,7 +19,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, pre, a, li, blockquote {
-  font-family: Monaco, "Courier New", monospace;
+  font-family: 'Iropke Batang', 'Noto', serif;
+  color: #333333;
 }
 
 a {
