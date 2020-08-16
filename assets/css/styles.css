@@ -108,3 +108,9 @@ blockquote {
   font-style: oblique;
   color: dimgray;
 }
+
+@media only screen and (max-width: 720px) {
+  .global-wrapper {
+    padding: 0;
+  }
+}
