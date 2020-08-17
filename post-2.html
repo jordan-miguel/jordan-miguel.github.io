@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Main Information -->
+  <title>Jordan Miguel</title>
+  <meta name="description" content="Jordan Miguel Web Developer">
+  <meta name="keywords" content="jordan miguel web design development
+        london UX email salesforce crm">
+  <meta name="author" content="Jordan Miguel">
+  <meta property="og:type" content="website">
+  <!-- "Website" -->
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Jordan-Miguel Web Developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, 
+        minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" href="https://blot.im/cdn/blog_7d2abaeaf9984b219d4640800bee14e7/_avatars/8e1d252c-4097-4c52-ba11-e1855b246d33.jpeg" type="image/x-icon">
+  <!-- Plugins -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80642122-2"></script>
+  <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-80642122-2');
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <!-- Style -->
+  <style type="text/css">.tk-freight-big-pro{font-family:"freight-big-pro",sans-serif;}</style>
+  <style type="text/css">
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+
+<body>
+    <article class="global-wrapper">
+        <header class="site-header">
+            <a href="\" title="main-page">
+                <span>Jordan-Miguel</span>
+            </a>
+        </header>
+        <section class="site-content">
+            <article class="posts-wrapper">
+                <h1>HTTP vs HTTPS</h1>
+                <p class="meta">17 Aug 2020</p>
+                <section class="posts-content">
+                    <blockquote>
+                        <p>If you work in tech you will almost certainly have come across the HTTP vs HTTPS issue. Hopefully you haven't had to manually convert
+                             all instances of HTTP to HTTPS in your codebase (raises hand✋🏾)
+                            <br><br>
+                            Unfortunately I was given the exciting task of doing this recently, whilst having my plate already full - but such is life.
+                            <br><br>
+                            I want to briefly go over the difference between HTTP and HTTPS for those who are interested.
+                        </p>
+                    </blockquote>
+                    <p class="meta">What is HTTP?</p>
+                    <blockquote>
+                        <p>
+                            Firstly, the acronym stands for <b>H</b>yper<b>t</b>ext <b>T</b>ransfer <b>P</b>rotocol. Essentially HTTP allows an internet application to establish and improve
+                            the client-server communication between shared information systems.
+                        </p>
+                        <p>
+                            In layman terms, your browser sends a HTTP request to the web server (a could computer for example). The server receives this request and
+                            if all is well, executes an application. It then returns the execution to the client. 
+                        </p>
+                        <p>
+                            If you click on a Youtube video, you are sending a request to the Youtube server, this server executes your request and plays the video - you
+                            are the client.
+                            <br>
+                            Simple, right?
+                        </p> 
+                    </blockquote>
+                    <p class="meta">What is HTTPs?</p>
+                    <blockquote>
+                        <p>
+                           This stands for Hypertext Transfer Protocol <b>Secure</b>. You're probably thinking, secure is better - and you are completely right.
+                           <br>
+                           A HTTPs request follows the same flow as we've just described above in HTTP. There is one <b>major difference</b>.
+                        </p>
+                        <p>Unlike a HTTP request, HTTPS requests secure the flow of information between client and server via <i>encryption</i>.
+                            Therefore this information cannot be intercepted and used in a malicious way.
+                        </p>
+                        <p>
+                            Up until a few years ago HTTP was widely used and accepted as the norm, however web browsers place the integrity and confidentiality of data
+                            between client and server at the forefront of their concerns. 
+                            <br>
+                            If you're using chrome, visit a site without a HTTPs protocol, to do this simply type 'http:' into the search bar and select the first site
+                            that shows. You should see the below.
+                        </p>
+                        <img src="assets/media/http.png">
+                    </blockquote>
+                    <p class="meta">Checking your code</p>
+                    <blockquote>
+                        <p>
+                            If you're working solely, or in a large team with a huge codebase you can check that you're conforming to HTTPs protocol best practices by using
+                            this quick tip.
+                            <br>
+                            Hit CMD+F or CTRL+F and search for any instances of 'http:/' - simply replace all with 'https:/' or one by one depending on your needs.
+                            <br>
+                            <b>Note:</b> If you are working in a large team that uses version control I would advise against doing this in the Master branch!
+                        </p>
+                    </blockquote>
+                </section>
+            </article>
+        </section>
+        <footer>
+            <a href="https://github.com/jordan-miguel" target="_blank" class="github"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://twitter.com/jordan__miguel" target="_blank" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/jordanmiguel1/" target="_blank" class="linkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        </footer>
+    </article>
+</body>
+
+</html>
